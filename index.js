@@ -28,7 +28,7 @@ app.use('/', (req, res) => {
   res.send('Welcome to Url Shortner API')
 })
 
-app.use(errorHandler)
+// app.use(errorHandler)
 
 const PORT = 5000 || process.env.PORT
 
