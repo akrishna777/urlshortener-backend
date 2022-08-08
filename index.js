@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 
 // Database Connection Configurations:
 import connectDB from './Config/db.js'
-dotenv.config({ path: './config.env' })
+dotenv.config()
 
 // Error Handler Import
 import errorHandler from './Middlewares/error.js'
