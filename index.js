@@ -5,8 +5,6 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 
 // Database Connection Configurations:
-import connectDB from './Config/db.js'
-dotenv.config()
 
 // Error Handler Import
 import errorHandler from './Middlewares/error.js'
@@ -17,6 +15,7 @@ import shortUrlRouter from './Routes/ShortUrls.js'
 import ShortUrl from './Models/shortUrls.js'
 
 const app = express()
+dotenv.config()
 
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
